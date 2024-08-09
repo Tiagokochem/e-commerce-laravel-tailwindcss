@@ -11,5 +11,7 @@
       </head>
     <body>
        <livewire:header />
+       <livewire:hero-section />
+       <livewire:product-listing />
     </body>
 </html>
