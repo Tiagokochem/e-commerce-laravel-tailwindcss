@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>E-Commerce-app</title>
-          @vite('resources/css/app.css')
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>E-Commerce-app</title>
+    @vite('resources/css/app.css')
 
 
-      </head>
-    <body>
-       <livewire:header />
-       <livewire:hero-section />
-       <livewire:product-section />
-    </body>
+</head>
+
+<body>
+    <livewire:header />
+    <livewire:hero-section />
+    <livewire:product-section />
+    <livewire:footer />
+</body>
+
 </html>
