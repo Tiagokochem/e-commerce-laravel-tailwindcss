@@ -1,7 +1,7 @@
 <nav aria-label="Breadcrumb">
   <ol class="flex items-center gap-1 text-sm text-gray-600">
     <li>
-      <a href="#" class="block transition hover:text-gray-700">
+      <a href="/admin/dashboard" class="block transition hover:text-gray-700">
         <span class="sr-only"> Home </span>
 
         <svg
@@ -37,10 +37,10 @@
     </li>
 
     <li>
-      <a href="#" class="block transition hover:text-gray-700"> Shirts </a>
+      <a href="#" class="block transition hover:text-gray-700"> {{$url}} </a>
     </li>
 
-    <li class="rtl:rotate-180">
+    {{-- <li class="rtl:rotate-180">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="w-4 h-4"
@@ -57,6 +57,6 @@
 
     <li>
       <a href="#" class="block transition hover:text-gray-700"> Plain Tee </a>
-    </li>
+    </li> --}}
   </ol>
 </nav>

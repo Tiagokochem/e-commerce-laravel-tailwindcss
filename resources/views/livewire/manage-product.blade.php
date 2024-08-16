@@ -1,0 +1,3 @@
+<div>
+    Manage Products
+</div>
