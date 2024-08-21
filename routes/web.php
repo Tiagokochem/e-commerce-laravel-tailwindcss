@@ -2,6 +2,7 @@
 
 use App\Livewire\AddProductForm;
 use App\Livewire\AdminDashboard;
+use App\Livewire\ManageCategories;
 use App\Livewire\ManageProduct;
 use App\Livewire\ManageOrders;
 use App\Livewire\ProductDetails;
@@ -22,4 +23,8 @@ Route::get('/product/details', ProductDetails::class);
     Route::get('/orders', ManageOrders::class)->name('orders');
 
     Route::get('/add/produtct', AddProductForm::class);
+    
+    Route::get('/manage/categories', ManageCategories::class);
+
+    Route::get('/add/category', ManageCategories::class);
 });
