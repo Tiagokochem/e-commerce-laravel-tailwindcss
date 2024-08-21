@@ -13,11 +13,13 @@ class AddProductForm extends Component
     use WithFileUploads;
     public $currentUrl;
     public $product_name = '';
-    public $photo;
+    public $photo = '';
     public $product_description = '';
     public $product_price = '';
 
-    public $category_id;
+    public $category_id = '';
+
+    public $categoria_name = '';
 
     public $all_categories;
 
