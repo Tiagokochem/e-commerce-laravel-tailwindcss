@@ -3,19 +3,19 @@
     <!-- Card Section -->
     <div class="max-w-4xl px-4 py-10 mx-auto sm:px-6 lg:px-8 lg:py-14">
         <!-- Card -->
-        <div class="p-4 shadow bg-slate-100 rounded-xl sm:p-7">
+        <div class="p-4 shadow bg-slate-100 rounded-xl sm:p-7 dark:bg-neutral-900">
             <form wire:submit="save">
                 <!-- Section -->
-                <div class="grid gap-2 py-8 border-t border-gray-200 sm:grid-cols-12 sm:gap-4 first:pt-0 last:pb-0 first:border-transparent">
+                <div class="grid gap-2 py-8 border-t border-gray-200 sm:grid-cols-12 sm:gap-4 first:pt-0 last:pb-0 first:border-transparent dark:border-neutral-700 dark:first:border-transparent">
                     <div class="sm:col-span-12">
-                        <h2 class="text-lg font-semibold text-gray-800">
+                        <h2 class="text-lg font-semibold text-gray-800 dark:text-neutral-200">
                             Add New Category
                         </h2>
                     </div>
                     <!-- End Col -->
 
                     <div class="sm:col-span-3">
-                        <label for="af-submit-application-full-name" class="inline-block text-sm font-medium text-gray-500 mt-2.5">
+                        <label for="af-submit-application-full-name" class="inline-block text-sm font-medium text-gray-500 mt-2.5 dark:text-neutral-500">
                             Category name
                         </label>
                     </div>
@@ -23,7 +23,7 @@
 
                     <div class="sm:col-span-9">
                         <div>
-                            <input type="text" wire:model="category_name" id="af-submit-application-full-name" class="relative block w-full px-3 py-2 -mt-px text-sm border-gray-200 shadow-sm pe-11 -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none">
+                            <input type="text" wire:model="category_name" id="af-submit-application-full-name" class="relative block w-full px-3 py-2 -mt-px text-sm border-gray-200 shadow-sm pe-11 -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600">
 							@error('category_name') <span class="text-red-500">{{ $message }}</span> @enderror
 						</div>
                     </div>
@@ -32,7 +32,7 @@
                 <!-- End Section -->
 
                 <button type="submit" class="inline-flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-lg gap-x-2 hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
-                    <div wire:loading class="animate-spin inline-block size-4 border-[3px] border-current border-t-transparent text-white-600 rounded-full" role="status" aria-label="loading">
+                    <div wire:loading class="animate-spin inline-block size-4 border-[3px] border-current border-t-transparent text-white-600 rounded-full dark:text-blue-500" role="status" aria-label="loading">
                       <span class="sr-only">Loading...</span>
                     </div>  
                   Submit and Save
